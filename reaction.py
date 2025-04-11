@@ -18,7 +18,7 @@ def pressed(button):
     left_button.when_pressed = None
     right_button.when_pressed = None
 
-max_round=int(input("How many rounds of the game do you want to play?"))
+max_rounds=int(input("How many rounds of the game do you want to play?"))
 
 current_round = 0
 
