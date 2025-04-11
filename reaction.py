@@ -33,14 +33,16 @@ while current_round < max_rounds:
 	current_round += 1
 	print(f" {current_round} round begin")
 
-	left_button.when_pressed = pressed
-	right_button.when_pressed = pressed
 
 	led.on()
 	delay = uniform(5, 10)
 	sleep(delay)
 	led.off()
 	off_time=time.time()
+	
+	
+	left_button.when_pressed = pressed
+	right_button.when_pressed = pressed
 
 	start_time = time.time()
 	while time.time() - start_time < 3:
